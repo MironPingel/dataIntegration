@@ -30,7 +30,6 @@ let ajaxCallback = function (txt) {
       let result = JSON.parse(txt);
 
       countryList = result;
-      console.log(countryList);
       
 
 
@@ -46,6 +45,7 @@ let ajaxCallback = function (txt) {
          countrycode = select.value;
          console.log(countrycode);
          getDistricts();
+         district = "";
       });
 
       init = true;
@@ -77,6 +77,9 @@ let ajaxCallback = function (txt) {
 
       dSelect.addEventListener("change", function (e) {
          district = dSelect.value;
+         console.log(district);
+         console.log(countrycode);
+         
          getDistrict();
       });
       
@@ -92,14 +95,6 @@ let ajaxCallback = function (txt) {
       let cities = document.getElementById("cities");
 
 
-      // country.innerHTML = c.country.Name;
-      // population.innerHTML = c.country.Population;
-
-      // if (c.capital) {
-      //    capital.innerHTML = c.capital.Name;
-      // }
-
-      // capitalPopulation.innerHTML = c.capital.Population;
 
       // Languages
       cities.innerHTML = "";
@@ -111,12 +106,6 @@ let ajaxCallback = function (txt) {
          li.appendChild(text);
          cities.appendChild(li);
       }
-
-      // // Density
-      // let dens = c.country.Population / c.country.SurfaceArea;
-      // density.innerHTML = dens;
-
-      // stateHead.innerHTML = c.country.HeadOfState;
    }
 }
 

@@ -6,8 +6,8 @@ $database = "world";
 $countryCode = $_GET["countrycode"];
 $district = $_GET["district"];
 
-$countryCode = "DEU";
-$district = "Niedersachsen";
+// $countryCode = "DEU";
+// $district = "Niedersachsen";
 
 
 $capitalId = "";
