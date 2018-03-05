@@ -1,0 +1,13 @@
+#flash {
+    position: absolute;
+    left: 50%;
+    bottom: -200px;
+    transform: translate(-50%);
+    padding: 20px;
+    background: rgb(144, 149, 158);
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+
+    transition: all 300ms ease;
+}

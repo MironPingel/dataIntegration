@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link href="../assets/css/app.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+   <div class="container">
+      <br>
+      <br>
+      <h1>Select a country</h1>
+      <div class="bs-callout bs-callout-info">Select a country from the List below to see more information about it.</div>
+
+      <select class="form-control" id="select">
+      </select>
+      <br>
+      <select class="form-control" id="districtSelect" disabled>
+      </select>
+
+      <div class="card mt-5 p-3">
+         <h3 id="country">Country</h3>
+         <h5 id="district">District</h5>
+         <p>
+            <b>Population of the entire Country</b>
+         </p>
+         <p id="population"></p>
+
+         <p>
+            <b>Popluation of District</b>
+         </p>
+         <p id="districtPopulation"></p>
+
+         <p>
+            <b>Cities in the district</b>
+         </p>
+         <ul id="cities"></ul>
+
+       
+      </div>
+   </div>
+
+
+
+   <script src="../assets/js/ajax.js"></script>
+   <script src="../assets/js/JSON_2/2_2.js"></script>
+
+</body>
+
+</html>

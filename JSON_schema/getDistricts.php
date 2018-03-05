@@ -1,0 +1,37 @@
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$database = "world";
+$countryCode = $_GET["countrycode"];
+
+
+$capitalId = "";
+
+$json = [];
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
+// City Query
+$sqlString = 'SELECT * FROM city WHERE CountryCode="'.$countryCode.'";';
+$result = mysqli_query($conn, $sqlString);
+$districts = [];
+
+if (mysqli_num_rows($result)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        array_push($districts, mysqli_fetch_assoc($result));
+    }
+    $json = $districts;
+} else {
+    $json = "empty";
+}
+
+
+echo json_encode($json, true);

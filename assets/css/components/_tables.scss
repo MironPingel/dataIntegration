@@ -1,0 +1,37 @@
+#a2container {
+    padding: 2%;
+
+    .mainTitle {
+        font-size: 3rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        color: grey;
+        margin-bottom: 15px;
+    }
+
+        #distances {
+        .top {
+            font-weight: bold;
+            background-color: lightgrey;
+        }   
+        
+        .left {
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeeefb;
+        }
+
+        td {
+            border: 1px solid lightgrey;
+            padding: 5px 20px;
+            white-space: nowrap;
+        }
+
+        .empty {
+            background-color: rgb(235, 235, 235);
+            color: transparent;
+        }
+    }
+}
