@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
-   <link href="../assets/css/app.css" rel="stylesheet" />
+   <link href="./main.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
@@ -17,11 +17,13 @@
       <br>
       <br>
       <h1>Select a country</h1>
-      <div class="bs-callout bs-callout-info">Select a country from the List below to see more information about it.</div>
+      <div class="bs-callout bs-callout-info"><b>I switched to an alterntive approach to handeling an AJAX request here, using promises. <br> I also simplified the php files, by creating one api.php file which can handle all the necessarry requests. </b><br><br> Select a country from the List below to see more information about it.</div>
 
+      <h4>Country</h4>
       <select class="form-control" id="select">
       </select>
       <br>
+      <h4>District</h4>
       <select class="form-control" id="districtSelect" disabled>
       </select>
 
@@ -49,8 +51,8 @@
 
 
 
-   <script src="../assets/js/ajax.js"></script>
-   <script src="../assets/js/JSON_2/2_2.js"></script>
+   <script src="./ajaxGet.js"></script>
+   <script src="./main.js"></script>
 
 </body>
 

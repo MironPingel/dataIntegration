@@ -50,7 +50,7 @@
                         <span>2.1</span>Country Application (Ajax)</a>
                 </li>
                 <li>
-                    <a href="JSON_schema/2_2.html">
+                    <a href="JSON_schema/2_2/index.html">
                         <span>2.2</span>Country &amp; District Application (Ajax)</a>
                 </li>
             </ul>
